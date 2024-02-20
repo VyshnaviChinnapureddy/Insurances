@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Calculator</title>
+<title>Calculator.jsp</title>
 </head>
 <body>
 <style>
