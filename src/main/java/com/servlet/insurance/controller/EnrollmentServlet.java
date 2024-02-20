@@ -14,31 +14,30 @@ import jakarta.servlet.http.HttpSession;
 public class EnrollmentServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
+	
+	public EnrollmentServlet() {
+		super();
+	}
 
 	protected void doPost(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("Post method triggered in Enrollment");
-		String sno=request.getParameter("sno");
-		int fsno=0;
-		try {
-			fsno=Integer.parseInt(sno);
-		}catch(Exception e) {
-			fsno=0;
-		}
+		System.out.println("Post method triggered in enrollment");
+		
 		String firstname=request.getParameter("firstname");
 		String lastname=request.getParameter("lastname");
 		String DateofBirth=request.getParameter("DateofBirth");
 		String gmailid=request.getParameter("gmailid");
+		String mobilenumber=request.getParameter("mobilenumber");
 		String Address=request.getParameter("Address");
-		String packagename=request.getParameter("packagename");
+		String policyname=request.getParameter("policyname");
 		
 		EnrollmentEntity entity=new EnrollmentEntity();
-		entity.setSno(fsno);
 		entity.setFirstname(firstname);
 		entity.setLastname(lastname);
 		entity.setDateofBirth(DateofBirth);
 		entity.setGmailid(gmailid);
+		entity.setMobilenumber(mobilenumber);
 		entity.setAddress(Address);
-		entity.setPackagename(packagename);
+		entity.setPolicyname(policyname);
 		
 		
 		Implementation imp=new Implementation();
@@ -59,11 +58,5 @@ public class EnrollmentServlet extends HttpServlet {
 					}else {
 						fail.forward(request, response);
 					}
-			 
-				
-			
-		
-		
-	} 
-
-}
+					} 
+	}

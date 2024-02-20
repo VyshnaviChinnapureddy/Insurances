@@ -9,18 +9,112 @@
 
   <display-name>Life Insurance Project</display-name>
   <welcome-file-list>
-  <welcome-file>Index.html</welcome-file>
-  <welcome-file>Enrollment.html</welcome-file>
-  <welcome-file>Sucess.html</welcome-file>
-  </welcome-file-list>
-  
+	    <welcome-file>Index.html</welcome-file>
+		<welcome-file>IndexInsurance.html</welcome-file>
+		<welcome-file>Enrollment.html</welcome-file>
+		<welcome-file>Success.html</welcome-file>
+		<welcome-file>Failure.html</welcome-file>
+		<welcome-file>AddPolicydetails.html</welcome-file>
+		<welcome-file>InsuranceDetails.jsp</welcome-file>
+		<welcome-file>Fetch.html</welcome-file>
+		<welcome-file>Update.html</welcome-file>
+		<welcome-file>Remove.html</welcome-file>
+		<welcome-file>Calculator.jsp</welcome-file>
+		<welcome-file>Joins.html</welcome-file>
+		<welcome-file>Claims.jsp</welcome-file>
+		<welcome-file>Policy.jsp</welcome-file>
+		<welcome-file>Claim.jsp</welcome-file>
+		<welcome-file>Claiming.html</welcome-file>
+		<welcome-file>Myprofile.html</welcome-file>
+		<welcome-file>Profiles.html</welcome-file>
+  		<welcome-file>Profiles.jsp</welcome-file>
+	</welcome-file-list>
+	
   <servlet>
-  <servlet-name>EnrollmentServlet</servlet-name>
-  <servlet-class>com.servlet.insurance.controller.EnrollmentServlet</servlet-class>
+		<servlet-name>EnrollmentServlet</servlet-name>
+		<servlet-class>com.servlet.insurance.controller.EnrollmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EnrollmentServlet</servlet-name>
+		<url-pattern>/EnrollmentServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>InsuranceServlets</servlet-name>
+		<servlet-class>com.servlet.insurance.controller.InsuranceServlets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsuranceServlets</servlet-name>
+		<url-pattern>/InsuranceServlets</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewallServlet</servlet-name>
+		<servlet-class>com.servlet.insurance.controller.ViewallServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewallServlet</servlet-name>
+		<url-pattern>/ViewallServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>com.servlet.insurance.controller.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/UpdateServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>com.servlet.insurance.controller.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/DeleteServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>JoinsServlet</servlet-name>
+		<servlet-class>com.servlet.insurance.controller.JoinsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>JoinsServlet</servlet-name>
+		<url-pattern>/JoinsServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PolicyServlet</servlet-name>
+		<servlet-class>com.servlet.insurance.controller.PolicyServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PolicyServlet</servlet-name>
+		<url-pattern>/PolicyServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ClaimServlet</servlet-name>
+		<servlet-class>com.servlet.insurance.controller.ClaimServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ClaimServlet</servlet-name>
+		<url-pattern>/ClaimServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	
+  <servlet-name>ProfServelt</servlet-name>
+  <servlet-class>com.servlet.insurance.controller.ProfServelt</servlet-class>
   </servlet>
   
   <servlet-mapping>
-  <servlet-name>EnrollmentServlet</servlet-name>
-  <url-pattern>/EnrollmentServlet</url-pattern>
+  <servlet-name>ProfServelt</servlet-name>
+  <url-pattern>/ProfServelt</url-pattern>
   </servlet-mapping>
+
+  
+  
 </web-app>

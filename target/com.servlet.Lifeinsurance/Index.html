@@ -1,119 +1,235 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-<style>
-body{
-background-color:#BE93D4;
+<meta charset="UTF-8">
+<title>Welcome to Zurich</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+button.s {
+	background-color:green;
+	color: white;
+	padding: 4px 5px;
+	margin: 2px 0;
+	border: none;
+	cursor: pointer;
+	width: 40%;
 }
-.aa{
-display:flex;
 
+button.s:hover {
+	opacity: 0.8;
 }
-.a{
-   display:inline;
-   padding-right:10px;
-   margin:auto;
+.banner{
+	background-color:darkblue;
 }
-.button {
-  display: inline-block;
-  border-radius: 5px;
-  background-color: #A1045A;
-  border: none;
-  color: #FFFFFF;
+.banner h1 {
+margin:30px;
+font-size:45px;
+font-weight:bold;
+color:white;
+}
+.banner p{
+font-size: 20px;
+margin: 20px 0px 35px 30px;
+color: white;
+letter-spacing: 1px;
+font-weight: 300;
+text-decoration: capitalize;
+}
+.banner-btn{
+border-radius:50px;
+background: blue;
+padding: 15px 30px;
+min-width: 170px;
+border: 1px solid black;
+color: white;
+font-size: 14px;
+text-transform: uppercase;
+margin-top: 13px;
+display: inline-block;
+text-align: center;
+margin-right: 12px;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: darkblue;
+  padding: 7px;
   text-align: center;
-  font-size: 18px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+  color: white;
+}
+.fa:hover {
+   
+    
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.fa-facebook {
+  
+  color: white;
+  font-size: 50px;
+  margin: 5px 2px;
 }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.fa-twitter {
+  
+  color: white;
+  font-size: 50px;
+  margin: 5px 2px;
 }
 
-.button:hover span {
-  padding-right: 35px;
+.fa-google {
+  
+  color: white;
+  font-size: 50px;
+  margin: 5px 2px;
 }
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-div.b {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
+.fa-linkedin {
+  
+  color: white;
+  font-size: 50px;
+  margin: 5px 2px;
 }
 
-div.b img {
-  padding: 10px;
+.fa-youtube {
+ 
+  color: white;
+  font-size: 50px;
+  margin: 5px 2px;
 }
-.c{
-padding-right:85px;
+
+.fa-instagram {
+ 
+  color: white;
+  font-size: 50px;
+  margin: 5px 2px;
+}
+.name {
+  
+  color: white;
+  font-size: 30px;
+  
+}
+
+.banner h1 {
+margin:30px;
+font-size:45px;
+font-weight:bold;
+color:white;
 }
 </style>
 </head>
 <body>
-</style>
-<div class="aa">
-<br>
-<img src="https://www.sbilife.co.in/sites/SBILife/NewHomePage/images/SBI_Logo.png"  width="100">
-<h3 class="a"><b>&#128100;Join us</b></h4>
-<form class="a">
-<select  class="a" name="Langauage">
-<option value="English">English</option>
-<option value="Telugu">Telugu</option>
-<option value="Hindi">Hindi</option>
-<option value="Urdu">Urdu</option>
-</select>
-</form>
-<p class="a"> &#128276;Notifications</p>
-<p class="a"> &#129458;Login</p>
-</div>
-<br>
-<br>
-<button class="button" style="vertical-align:middle"><a href="Enrollment.html"><span>ENROLLMENT </span></button>
-<button class="button" style="vertical-align:middle"><span>SERVICES </span></button>
-<button class="button" style="vertical-align:middle"><span>ABOUT </span></button>
-<button class="button" style="vertical-align:middle"><span>CONTACT US </span></button>
-<button class="button" style="vertical-align:middle"><span>GRIVENCES</span></button>
 
-<br>
-<div class="b">
-<img src="https://www.sbilife.co.in/WebBannerSmartPlatinaAssure.webp" width="1500" height="300">
-<img src="https://www.sbilife.co.in/Urban_WebBan_1923x565_1.webp" width="1500" height="300">
-<img src="https://www.sbilife.co.in/CallInbound.webp" width="1500" height="300">
-<img src="https://www.sbilife.co.in/WebBannerSmartPlatinaAssure.webp" width="1500" height="300">
-<img src="https://www.sbilife.co.in/LifeVerse_WebBanner_1923x565.webp" width="1500" height="300">
-<img src="https://www.sbilife.co.in/WebBnnerCrimeSecurity.webp" width="1500" height="300">
+<!-- Top Head1 navbar Start -->
+<div class="head">
+<div class="container-fluid">
+<ul>
+<li><a href="#">Resources For Agents</a></li>
+<li class="vertical_line"></li>
+<li><a href="#">Financial Professionals</a></li>
+<li class="vertical_line"></li>
+<li><a href="#">Enterprise Partners</a></li>
+<li class="vertical_line"></li>
+<li><a href="#">Career Seekars</a></li>
+</ul>
 </div>
-<p>
-<img src="https://www.sbilife.co.in/newchildseducationimage" class="c">
-<img src="https://www.sbilife.co.in/newcarefreeretirementimage" class="c">
-<img src="https://www.sbilife.co.in/newfinancialsecurityimage" class="c">
-<img src="https://www.sbilife.co.in/newfamilyprotectionimage" class="c">
-<img src="https://www.sbilife.co.in/newwealthcreationimage" class="c">
-</p>
-<button><input></button>
+</div>
+
+<!-- Top head2 navbar start  -->
+<div class="nav">
+<div class="container-fluid">
+<div class="nav1_right">
+<a href="#"><img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFb1ZjOxMfhZyNGaKHEwPpdKYDpmwboj5fxg&usqp=CAU.png" style="width:180px; height:45px; padding:25px 15px"> </a>
+</div>
+<div class="nav1_left">
+<div class="search-container">
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </div>
+     
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="" class="fcc_btn" href="Login.html">Login</a> 
+  </div>
+</div>
+</div>
+<!-- Top head nav bar ends  -->
+
+<!-- Bottom navbar starts -->
+<div class="head2">
+<div class="head2_container">
+<a href="Enrollment.html"><span class="text_large">NEW ENROLLMENT</span><br><span class="text_small">Enroll Here</span></a>
+  <a href="Claiming.html"><span class="text_large">CLAIM STATUS</span><br><span class="text_small">Customers Claim Status </span></a>
+  <a href="IndexInsurance.html"><span class="text_large">OTHER POLICIES</span><br><span class="text_small">Know Our Policies</span></a>
+   <a href="contact.html"><span class="text_large">MAIL US</span><br><span class="text_small">Connect With Us</span></a>
+    <a href="Myprofile.html"><span class="text_large">MY PROFILE</span><br><span class="text_small">Plans to Manage Your Needs</span></a>
+       
+  <a target="" class="fcc_btn1 split" href="#">Pay a bill</a>
+  <a target="" class="fcc_btn1 split" href="#">Help</a>
+</div>
+</div>
+
+<!-- Banner Image Start-->
+<div class="banner" style="width:100%;height:490px">
+<div class="container-fluid">
+<div class="banner_image_right" style="width:50%;height:490px;float:left">
+<h1>Insurance to protect who you love</h1>
+<p>When you truly love your family, your assets or<br> your business, you protect them as best you can.<br> But you can’t do it all alone. At Zurich we can help<br> you understand the entire situation, smooth out<br> the bumps and offer practical solutions. If there’s<br> a way we can make things easier for you, big or<br> small, we will.</p>
+<a href="#" class="banner-btn">I'm a Customer</a>
+<a href="#" class="banner-btn">I'm a Adviser</a>
+</div>
+<div class="banner_image_left" style="width:50%;height:490px;background-color:pink;float:right">
+<img alt="" src="https://yt3.googleusercontent.com/ytc/AIf8zZSNRC7p0snFfFqpXASIcaI9MpPZE6I1Ti11Q6nDMg=s900-c-k-c0x00ffffff-no-rj" style="width:100%;height:490px">
+
+</div>
+</div>
+</div>
+
+
+<!-- Banner image ends -->
+<!-- Banner1 Image Start-->
+<div class="banner1" style="width:100%;height:490px">
+<div class="container-fluid1">
+<div class="banner1_image_right1" style="width:30%;height:490px;float:left">
+<h1 style="color:blue;align:justify;font-size: 40px" > <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>EMI CALCULATOR</b></h1><br><br>
+<div class="container">
+    <form style="font-size: 25px;font-weight: bold;" action="Calculator.jsp" method="post">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Principal Amount: <input type="text" name="principal_amount" placeholder="Enter Principal Amount" class="a" required><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interest Rate: <input type="text" name="interest_rate" placeholder="Enter Rate of Interest" class="a" required><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tenure (in months): <input type="text" name="tenure" placeholder="Enter Tenure of Months" class="a" required><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button s">SUBMIT</button><br><br>
+    </form>
+    
+</div>
+</div>
+<div class="banner1_image_left" style="width:70%;height:490px;background-color:pink;float:right">
+<img alt="banner image1" src="https://img.freepik.com/free-photo/happy-parents-laughing-together-with-daughter_53876-97234.jpg?size=626&ext=jpg" style="width:100%;height:490px">
+
+</div>
+</div>
+</div>
+
+
+<!-- Banner1 image ends -->
+<footer>
+<footer>
+<div align="right" class="media">
+<a href="#" class="name">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" class="name">Terms of Use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" class="name">Cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" class="name">Follow us : </a>&nbsp;&nbsp;
+<a href="www.facebook.com" class="fa fa-facebook"></a>&nbsp;&nbsp;
+<a href="www.twitter.com" class="fa fa-twitter"></a>&nbsp;&nbsp;
+<a href="www.google" class="fa fa-google"></a>&nbsp;&nbsp;
+<a href="www.linkedin" class="fa fa-linkedin"></a>&nbsp;&nbsp;
+<a href="www.youtube" class="fa fa-youtube"></a>&nbsp;&nbsp;
+<a href="www.instagram" class="fa fa-instagram"></a>&nbsp;&nbsp;
+
+</div>
+</footer>
+</footer>
 
 </body>
 </html>

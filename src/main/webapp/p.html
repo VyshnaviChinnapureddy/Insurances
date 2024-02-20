@@ -141,9 +141,7 @@ to {
 	<h1 style="color: black">Enroll Below</h1>
 
 	<button onclick="document.getElementById('id01').style.display='block'"
-		style="width: auto;">Enrollment</button><br>
-		
-		
+		style="width: auto;">Enrollment</button>
 
 	<div id="id01" class="modal">
 		<form class="modal-content animate" action="EnrollmentServlet"
@@ -237,14 +235,14 @@ body {
 							name="DateofBirth" placeholder="Enter Date OF Birth" class="e" required/>
 							
 							
-							 <span><b>Email ID:<b></b></span> <input
+							 <span> Email ID:</span> <input
 							type="text" id="gmailid" name="gmailid" placeholder="you@example.com" class="e" required/>
-							<span><b>Mobile No:</b></span> <input type="text" name="mobilenumber"
+							<span><b>Mobile No:</b></span> <input type="text" name="sno"
 							placeholder="Mobile No: 99XXXXXXX)" class="e" required/>
 							
 							 <span><b> Address:</b></span> <input type="text" name="Address" placeholder="Enter  Your Address" class="e" required/> <span>
-							<b>Select your Policy Name:</b>
-						</span> <select class="e" name="policyname">
+							<b>Select your Package:</b>
+						</span> <select class="e" name="packagename">
 							<option value="Smart Wealth Builder">Smart Wealth
 								Builder</option>
 							<option value="Life Platina Plus">Life Platina Plus</option>
@@ -256,7 +254,7 @@ body {
 							<option value="Smart Life Saver Plan">Smart Life Saver
 								Plan</option>
 							<option value="Smart Wealth Plus">Smart Wealth Plus</option>
-							<option value="Smart Platina Plus" selected>Smart Platina Plus</option>
+							<option value="Smart Platina Plus">Smart Platina Plus</option>
 							<option value="Smart Reteirment Plan">Smart Retirement
 								Plan</option>
 							<option value="Smart Savings Plan">Smart Savings Plan</option>
