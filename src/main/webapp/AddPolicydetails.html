@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add+Policy+Details</title>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+keyframes animatezoom {
+	from {transform: scale(0)
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+</style>
+</head>
+<body>
+	<h1 style="color: black">Add Policy</h1>
+
+	<button onclick="document.getElementById('id01').style.display='block'"
+		style="width: auto;">Add New Policy</button>
+
+	<div id="id01" class="modal">
+		<form class="modal-content animate" action="InsuranceServlets"
+			method="post">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'"
+					class="close" title="Close Modal">&times;</span> <img
+					src="https://bankofindia.co.in/documents/20121/395523/RELIANCE+GENERAL+INSURANCE+CO.+LTD.jpg"
+					alt="Avatar" class="avatar">
+			</div>
+			<style>
+form {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 0;
+	text-align: left;
+	color: black;
+	margin-top: 0;
+}
+
+body {
+	background-image:
+		url(https://bankofindia.co.in/documents/20121/395523/RELIANCE+GENERAL+INSURANCE+CO.+LTD.jpg/dab309ea-a1ed-f085-3d1e-f004b579830a?t=1675749426004.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;
+	background-attachment: fixed;
+	font-family: Arial, sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.e {
+	display: block;
+	margin-left: 20px;
+	padding: 10px;
+}
+</style>
+			<form action="InsuranceServlets" method="Post">
+				<div class="container">
+
+					<label for="policycode"><b>Enter Your Policycode:</b></label><br>
+					<input type="text" name="policycode" placeholder="Enter Policycode" class="e" required/> <label
+						for="policyname"><b>Select Your Policy Name:</b></label> <select
+						class="e" name="policyname">
+						<option value="Smart Wealth Builder">Smart
+							Wealth Builder</option>
+						<option value="Life Platina Plus">Life
+							Platina Plus</option>
+						<option value="Smart Scholar Plans">Smart
+							Scholar Plans</option>
+						<option value="Smart Platina Sheild">Smart
+							Platina Sheild</option>
+						<option value="Smart Platina Assure">Smart
+							Platina Assure</option>
+						<option value="Smart Life Saver Plan">Smart
+							Life Saver Plan</option>
+						<option value="Smart Wealth Plus">Smart
+							Wealth Plus</option>
+						<option value="Smart Platina Plus" selected>Smart
+							Platina Plus</option>
+						<option value="Smart Reteirment Plan">Smart
+							Reteirment Plan</option>
+						<option value="Smart Savings Plan">Smart
+							Savings Plan</option>
+					</select> <label for="policytype"><b>Select Your Policy Type:</b></label><br>
+					<select class="e" name="policytype">
+						<option value="Life Insurance">Life Insurance</option>
+						<option value="Medical Insurance">Medical Insurance</option>
+					</select> <br> <label class="container" for="policysubtype"><b>Select
+							Your PolicysubType:</b></label> <select class="e" name="policysubtype">
+						<option value="Term Life Insurance">Term Life Insurance</option>
+						<option value="Whole Life Insurance">Whole Life Insurance</option>
+						<option value="Universal Life Insurance">Universal Life
+							Insurance</option>
+						<option value="Variable Life Insurance">Variable Life
+							Insurance</option>
+						<option value="Indexed Universal Life Insurance">Indexed
+							Universal Life Insurance</option>
+						<option value="Final Expense Insurance">Final Expense
+							Insurance</option>
+						<option value="Health Maintenance Organisation(HMO)" selected>Health
+							Maintenance Organisation(HMO)</option>
+						<option value="Preferred Provider Organisation(PPO)">Preferred
+							Provider Organisation(PPO)</option>
+						<option value="Exclusive Provider Organisation(EPO)">Exclusive
+							Provider Organisation(EPO)</option>
+						<option value="Point of Service(POS)">Point of
+							Service(POS)</option>
+						<option value="High Deductible Health Plan(HDHP)">High
+							Deductible Health Plan(HDHP)</option>
+						<option value="Short-Term Health insurance">Short-Term
+							Health insurance</option>
+						<option value="Catastrophic Health insurance">Catastrophic
+							Health insurance</option>
+					</select>
+					<div>
+						<label for="annualpremiumrange">Select your Annual Premium
+							Range:</label> <input type="text" name="annualpremiumrange" placeholder="Enter Amount range" class="e">
+					</div>
+					<label for="eligiblityage"><b>Enter your Eligiblity
+							Age:</b></label><br> <input type="text" name="eligiblityage" placeholder="18years onwards" class="e" />
+
+					<label for="keybenefits"><b>Enter your Key Benefits:</b></label><br>
+					<input type="text" name="keybenefits" class="e" />
+
+
+					<form action="AddPolicydetails.html">
+						<button type="submit" class="registerbtn">Submit</button>
+
+						<div class="container homepage">
+							<p>
+								<a href="IndexInsurance.html">Back to MainPage</a>.<br><br>
+								<a href="Index.html">Back to Homepage</a>.
+							</p>
+						</div>
+					</form>
+</body>
+</html>

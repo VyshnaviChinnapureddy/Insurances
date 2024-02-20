@@ -1,50 +1,282 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+<meta charset="UTF-8">
+<title>Enrollment Page</title>
 <style>
-.e{
-   display:block;
-  margin-left:20px;
-  padding:10px;
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+keyframes animatezoom {
+	from {transform: scale(0)
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
 }
 </style>
+</head>
 <body>
-<h3>ENROLL BELOW</h3>
-<form action="EnrollmentServlet" method="Post">
-<label for="sno"><b>sno:</b></label><br>
-<input type="text"  name="sno" class="e"/>
-<label for="firstname"><b>Enter you First Name:</b></label><br>
-<input type="text" name="firstname" class="e"/>
-<label for="lastname"><b>Enter your Last Name:</b></label><br>
-<input type="text" name="lastname" class="e"/>
-<label for="DateofBirth"><b>Enter your Date Of Birth:</b></label><br>
-<input type="text" name="DateofBirth" class="e"/>
-<label for="gmail">Enter your email:</label>
-<input type="gmail" id="gmail" name="gmail" class="e">
-<label for="Address"><b>Enter your Address:</b></label><br>
-<input type="text" name="Address" class="e"/>
-<label for="packagename"><b>Select your Package:</b></label><br>
-<select  class="e" name="packagename">
-<option value="Arogya Sheild">Arogya Sheild</option>
-<option value="eSheild Next">eSheild Next</option>
-<option value="Saral Jeevan Bhima">Saral Jeevan Bhima</option>
-<option value="Smart Sheild">Smart Sheild</option>
-<option value="Sampoorna Suraksha">Sampoorna Suraksha</option>
-<option value="Grameen Bima">Grameen Bima</option>
-<option value="Smart Life Saver Plan">Smart Life Saver Plan</option>
-<option value="Smart Platina Plus">Smart Platina Plus</option>
-<option value="Shubh Nivesh">Shubh Nivesh</option>
-<option value="Smart Shubham">Smart Shubham</option>
-<br>
-<form action="	Enrollment.html">
-<input type="submit" value="submit"> 
-<button><a href="Index.html">Back to Homepage</button>
-</select>
-</form>
-</form>
-</body>
+	<h1 style="color: black">Enroll Below</h1>
+
+	<button onclick="document.getElementById('id01').style.display='block'"
+		style="width: auto;">Enrollment</button><br>
+		
+		
+
+	<div id="id01" class="modal">
+		<form class="modal-content animate" action="EnrollmentServlet"
+			method="post">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'"
+					class="close" title="Close Modal">&times;</span> <img
+					src="https://thumbs.dreamstime.com/b/glass-jar-coins-inscription-life-insurance-concept-medical-family-health-healthcare-red-heart-accumulation-money-130170008.jpg"
+					alt="Avatar" class="avatar">
+			</div>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+form {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 0;
+	text-align: left;
+	color: black;
+	margin-top: 0;
+}
+
+body {
+	background-image:
+		url(https://bankofindia.co.in/documents/20121/395523/RELIANCE+GENERAL+INSURANCE+CO.+LTD.jpg/dab309ea-a1ed-f085-3d1e-f004b579830a?t=1675749426004.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;
+	background-attachment: fixed;
+	font-family: Arial, sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.e {
+	display: block;
+	margin-left: 20px;
+	padding: 10px;
+}
+</style>
+			<body>
+
+				<form action="EnrollmentServlet" method="Post">
+					<div class="container">
+						<h1>Enrollment</h1>
+						<p>Please fill in this form to create an account.</p>
+						<hr>
+
+
+						 <span><b> First Name:</b></span> <input type="text" name="firstname"
+							placeholder="Enter  First Name" class="e" required/> <span><b> Last Name:</b></span> <input type="text" name="lastname" placeholder="Enter  Last Name" class="e" required/>
+						<span><b>Date Of Birth:</b></span> <input type="text"
+							name="DateofBirth" placeholder="Enter Date OF Birth" class="e" required/>
+							
+							
+							 <span><b>Email ID:<b></b></span> <input
+							type="text" id="gmailid" name="gmailid" placeholder="you@example.com" class="e" required/>
+							<span><b>Mobile No:</b></span> <input type="text" name="mobilenumber"
+							placeholder="Mobile No: 99XXXXXXX)" class="e" required/>
+							
+							 <span><b> Address:</b></span> <input type="text" name="Address" placeholder="Enter  Your Address" class="e" required/> <span>
+							<b>Select your Policy Name:</b>
+						</span> <select class="e" name="policyname">
+							<option value="Smart Wealth Builder">Smart Wealth
+								Builder</option>
+							<option value="Life Platina Plus">Life Platina Plus</option>
+							<option value="Smart Scholar Plans">Smart Scholar Plans</option>
+							<option value="Smart Platina Sheild">Smart Platina
+								Sheild</option>
+							<option value="Smart Platina Assure">Smart Platina
+								Assure</option>
+							<option value="Smart Life Saver Plan">Smart Life Saver
+								Plan</option>
+							<option value="Smart Wealth Plus">Smart Wealth Plus</option>
+							<option value="Smart Platina Plus" selected>Smart Platina Plus</option>
+							<option value="Smart Reteirment Plan">Smart Retirement
+								Plan</option>
+							<option value="Smart Savings Plan">Smart Savings Plan</option>
+						</select>
+						<p>
+							By creating an account you agree to our <a
+								href="https://www.zurich.ie/legal">Terms & Privacy</a>.
+						</p>
+
+						<button type="submit" class="registerbtn">Submit</button>
+					</div>
+
+					<div class="container signin">
+						<p align="left">
+							Already have an account? <a href="Login.html">Sign in</a>.
+						</p>
+						
+					</div>
+					
+					
+				</form>
+			</body>
 </html>

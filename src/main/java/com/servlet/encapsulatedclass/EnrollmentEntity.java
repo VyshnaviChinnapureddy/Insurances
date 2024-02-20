@@ -1,19 +1,16 @@
 package com.servlet.encapsulatedclass;
 
 public class EnrollmentEntity {
-	private int sno;
+	
 	private String firstname;
 	private String lastname;
 	private String DateofBirth;
 	private String gmailid;
-	private String Address;
-	private String packagename;
-	public int getSno() {
-		return sno;
-	}
-	public void setSno(int sno) {
-		this.sno = sno;
-	}
+	private String mobilenumber;
+	private String address;
+	private String policyname;
+	
+
 	public String getFirstname() {
 		return firstname;
 	}
@@ -26,7 +23,6 @@ public class EnrollmentEntity {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
-	
 	public String getDateofBirth() {
 		return DateofBirth;
 	}
@@ -39,19 +35,24 @@ public class EnrollmentEntity {
 	public void setGmailid(String gmailid) {
 		this.gmailid = gmailid;
 	}
+	public String getMobilenumber() {
+		return mobilenumber;
+	}
+	public void setMobilenumber(String mobilenumber) {
+		this.mobilenumber = mobilenumber;
+	}
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
-	public String getPackagename() {
-		return packagename;
+	public String getPolicyname() {
+		return policyname;
 	}
-	public void setPackagename(String packagename) {
-		this.packagename = packagename;
+	public void setPolicyname(String policyname) {
+		this.policyname = policyname;
 	}
-	
 	
 	
 
